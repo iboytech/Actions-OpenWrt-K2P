@@ -24,7 +24,7 @@ sed -i "s/OpenWrt /0012h build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" packag
 
 # Install theme
 rm -rf package/lean/luci-theme-*
-git clone -b master https://github.com/kiddin9/luci-theme-edge.git  package/lean/luci-theme-edge
+git clone -b master https://github.com/iboytech/luci-theme-edge.git package/lean/luci-theme-edge
 # git clone https://github.com/jerrykuku/luci-app-argon-config.git  package/lean/luci-theme-argon-config
 
 # 5.修改默认主题
