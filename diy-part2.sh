@@ -20,7 +20,7 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 sed -i "s/OpenWrt /0012h build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 6.设置ttyd免登录
-sed -i 's/\/bin\/login/\/bin\/login -f root/' /etc/config/ttyd
+# sed -i 's/\/bin\/login/\/bin\/login -f root/' /etc/config/ttyd
 
 # Install theme
 rm -rf package/lean/luci-theme-*
