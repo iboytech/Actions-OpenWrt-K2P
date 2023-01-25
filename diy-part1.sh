@@ -17,14 +17,10 @@
 # echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> feeds.conf.default
 # echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall" >> feeds.conf.default
 # git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-src-git packages https://github.com/coolsnowwolf/packages
-src-git luci https://github.com/coolsnowwolf/luci
-src-git routing https://git.openwrt.org/feed/routing.git
-src-git telephony https://git.openwrt.org/feed/telephony.git
-src-git freifunk https://github.com/freifunk/openwrt-packages.git
-#src-git video https://github.com/openwrt/video.git
-#src-git targets https://github.com/openwrt/targets.git
-#src-git management https://github.com/openwrt-management/packages.git
-#src-git oldpackages http://git.openwrt.org/packages.git
-#src-link custom /usr/src/openwrt/custom-feed
-src-git helloworld https://github.com/fw876/helloworld
+
+echo "src-git packages https://github.com/coolsnowwolf/packages" >> feeds.conf.default
+echo "src-git luci https://github.com/coolsnowwolf/luci" >> feeds.conf.default
+echo "src-git routing https://git.openwrt.org/feed/routing.git" >> feeds.conf.default
+echo "src-git telephony https://git.openwrt.org/feed/telephony.git" >> feeds.conf.default
+echo "src-git freifunk https://github.com/freifunk/openwrt-packages.git" >> feeds.conf.default
+echo "src-git helloworld https://github.com/fw876/helloworld" >> feeds.conf.default
