@@ -33,8 +33,12 @@ sed -i ' s/luci-theme-bootstrap/luci-theme-edge/g ' feeds/luci/collections/luci/
 # 7.修正连接数（by ベ七秒鱼ベ）
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
 
-# # Change opkg source
+# Change opkg source
 echo "sed -i 's#https://mirrors.cloud.tencent.com/lede/snapshots#https://k2p.dreamwalkerxz.workers.dev/k2p-repo#g' /etc/opkg/distfeeds.conf" >> package/lean/default-settings/files/zzz-default-settings
 
+# 设置默认SSID的名称
+sed -i 's|OpenWRT-2.4G.*|OpenWrt-2.4G\"|g' package/lean/mt/drivers/mt7615d/files/lib/wifi/mt_dbdc.sh
 
+# 设置默认SSID的名称
+sed -i 's|OpenWRT-5G.*|OpenWrt-5G\"|g' package/lean/mt/drivers/mt7615d/files/lib/wifi/mt_dbdc.sh 
 
